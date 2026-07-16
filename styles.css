@@ -1,0 +1,35 @@
+/* Базовые стили для PWA */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #E5E5E5;
+  overflow-x: hidden;
+}
+
+/* Скрываем все экраны по умолчанию */
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #FFF8F0;
+  position: relative;
+}
+
+/* Показываем активный экран */
+.screen.active {
+  display: flex;
+  flex-direction: column;
+}
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
